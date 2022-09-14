@@ -6,7 +6,7 @@ import datetime
 from AppFamilia.models import Familiar
 
 # Create your views here.
-def familiares():
+def familiares(self):
     diaHoy = datetime.datetime.now()
     familiar = Familiar(nombre='Alberto', edad=66, nacimiento='1956-08-20')
     familiar.save()
