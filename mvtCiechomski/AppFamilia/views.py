@@ -16,7 +16,7 @@ def familiares(self):
     familiar3.save()
     familiar4 = Familiar(nombre='Ana', edad=29, nacimiento='1993-06-08')
     familiar4.save()
-    diccionario= {"dia":diaHoy, "nombre":familiar.nombre, "edad":familiar.edad, "nacimiento":familiar.nacimiento, "nombre2":familiar2.nombre,"edad2":familiar2.edad,"nacimiento2":familiar2.nacimiento, "nombre3":familiar3.nombre,"edad3":familiar3.edad,"nacimiento3":familiar3.nacimiento }
+    diccionario= {"dia":diaHoy, "nombre":familiar.nombre, "edad":familiar.edad, "nacimiento":familiar.nacimiento, "nombre2":familiar2.nombre,"edad2":familiar2.edad,"nacimiento2":familiar2.nacimiento, "nombre3":familiar3.nombre,"edad3":familiar3.edad,"nacimiento3":familiar3.nacimiento, "nombre4":familiar4.nombre,"edad4":familiar3.edad,"nacimiento4":familiar4.nacimiento }
     plantilla = loader.get_template('template.html')
     documento = plantilla.render(diccionario)
     return HttpResponse(documento)
